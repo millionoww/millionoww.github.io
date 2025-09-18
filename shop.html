@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Магазин</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="blog.html">Блог</a>
+      <a href="shop.html">Магазин</a>
+      <a href="#">Обо мне</a>
+      <a href="#">Контакты</a>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section class="products">
+      <div class="product" data-id="1">
+        <h2>Футболка "Казахстан"</h2>
+        <p>Цена: 4500 ₸</p>
+        <button>Добавить в корзину</button>
+      </div>
+      <div class="product" data-id="2">
+        <h2>Блокнот для идей</h2>
+        <p>Цена: 2500 ₸</p>
+        <button>Добавить в корзину</button>
+      </div>
+      <div class="product" data-id="3">
+        <h2>Кружка "Нихуя"</h2>
+        <p>Цена: 3000 ₸</p>
+        <button>Добавить в корзину</button>
+      </div>
+    </section>
+
+    <section id="cart">
+        <h2>Корзина</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Итого: 0 ₸</p>
+    </section>
+
+    <section id="order-form">
+        <h2>Оформить заказ</h2>
+        <form id="checkout">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required>
+
+            <button type="submit">Отправить заказ</button>
+        </form>
+        <p id="order-status"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
